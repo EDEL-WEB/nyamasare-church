@@ -227,7 +227,7 @@ const Home = () => {
             </div>
             <div className="partner-logo">
               <div style={{ padding: '1rem', background: 'var(--glass-bg)', borderRadius: '8px', width: '100%', textAlign: 'center', backdropFilter: 'blur(10px)' }}>
-                ADRA Ghana
+                ADRA Kenya
               </div>
             </div>
             <div className="partner-logo">
@@ -253,7 +253,7 @@ const Home = () => {
               <h4>NYAMASARE SDA CHURCH</h4>
             </div>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              A vibrant Seventh-day Adventist community dedicated to worship, fellowship, and service in Ghana.
+              A vibrant Seventh-day Adventist community dedicated to worship, fellowship, and service in Kenya.
             </p>
           </div>
 
@@ -276,8 +276,8 @@ const Home = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              <p>📍 Nyamasare, Ghana</p>
-              <p>📞 +233 XXX XXX XXX</p>
+              <p>📍 Nyamasare, Kenya</p>
+              <p>📞 +254 XXX XXX XXX</p>
               <p>📧 info@nyamasaresda.org</p>
               <p>⏰ Sabbath Services: 9:30 AM & 11:00 AM</p>
             </div>

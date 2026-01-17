@@ -202,7 +202,7 @@ const Layout = () => {
 
       {/* Footer */}
       <footer style={{ backgroundColor: '#34495e', color: 'white', padding: '1rem 2rem', textAlign: 'center' }}>
-        <p>&copy; 2024 Nyamasare SDA Church. All rights reserved.</p>
+        <p>&copy; 2024 Nyamasare SDA Church, Kenya. All rights reserved.</p>
       </footer>
     </div>
   );
