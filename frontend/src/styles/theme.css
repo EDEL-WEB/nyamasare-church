@@ -1,0 +1,189 @@
+/* ===========================================
+   GLOBAL RESET & BASE
+=========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f4f6fa;
+    color: #1d2233;
+    height: 100%;
+}
+
+/* ===========================================
+   COLOR VARIABLES
+=========================================== */
+:root {
+    --nav-bg: #1d2233;
+    --nav-text: #e4e7ee;
+    --nav-hover: rgba(255,255,255,0.06);
+    --nav-active: rgba(255,255,255,0.12);
+    --accent-start: #9b4df0;
+    --accent-end: #ff7a18;
+}
+
+/* ===========================================
+   NAVBAR BASE
+=========================================== */
+.site-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: var(--nav-bg);
+    color: var(--nav-text);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+/* BRAND */
+.brand-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    background-clip: text;              /* non-webkit fallback */
+    -webkit-text-fill-color: transparent;
+    color: transparent;                 /* fallback */
+}
+
+
+/* DESKTOP NAV LINKS */
+.site-nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-link {
+    color: var(--nav-text);
+    text-decoration: none;
+    padding: 0.55rem 0.8rem;
+    border-radius: 6px;
+    transition: 0.2s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: var(--nav-hover);
+    color: white;
+}
+
+.nav-link.active {
+    background: var(--nav-active);
+    color: white;
+}
+
+/* ===========================================
+   MOBILE MENU (HAMBURGER)
+=========================================== */
+
+/* hamburger button */
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile-toggle span {
+    width: 24px;
+    height: 2.8px;
+    background: var(--nav-text);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* mobile menu closed by default */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: var(--nav-bg);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 0.75rem 1rem;
+}
+
+.mobile-nav .nav-link {
+    padding: 0.7rem 0;
+    border-radius: 4px;
+}
+
+/* toggle open state */
+.mobile-open .mobile-nav {
+    display: flex;
+}
+
+.mobile-open .mobile-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-open .mobile-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-open .mobile-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===========================================
+   RESPONSIVE BREAKPOINTS
+=========================================== */
+@media (max-width: 800px) {
+    .site-nav {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: flex;
+    }
+}
+
+/* ===========================================
+   OPTIONAL CONTENT AREA STYLING
+=========================================== */
+.content {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ===========================================
+   OPTIONAL FOOTER MATCHING (if you add later)
+=========================================== */
+.footer {
+    background: #1d2233;
+    color: #e4e7ee;
+    padding: 3rem 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.footer a {
+    color: #dfe3ee;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    background-clip: text;              /* Firefox + standards */
+    -webkit-text-fill-color: transparent;
+    color: transparent;                 /* fallback */
+}
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}

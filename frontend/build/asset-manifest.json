@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.33b4acfb.css",
+    "main.js": "/static/js/main.2289323a.js",
+    "static/media/sda_logo.png": "/static/media/sda_logo.1000014ccbd3675cad8c.png",
+    "index.html": "/index.html",
+    "main.33b4acfb.css.map": "/static/css/main.33b4acfb.css.map",
+    "main.2289323a.js.map": "/static/js/main.2289323a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33b4acfb.css",
+    "static/js/main.2289323a.js"
+  ]
+}
